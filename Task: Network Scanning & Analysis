@@ -1,0 +1,12 @@
+Step 1: Host Discovery
+  Nmap –sn 172.16.173.0/24
+  Nmap –sn tells nmap to discover which hosts are online without performing a port scan.
+Step 2: Port Scanning (2 Marks)
+  Scan for open ports and services:
+  nmap -sS -sV 172.16.173.138- -sS-TCP SYN port scan –sV-service/version detection.
+Step 3: OS Detection
+  Nmap –A 172.16.173.138 – Aggressive scan.
+Step 4: Basic Vulnerability Scan
+     vulnerability detection script:
+    nmap --script vuln 172.16.173.138.
+Step5: Analysis & Reporting
